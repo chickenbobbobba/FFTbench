@@ -8,8 +8,8 @@
 int main(int argc, char* argv[]) {
     using namespace std::chrono;
 
-    size_t N = 1 << 16;
-    size_t trials = 1 << 8;
+    size_t N = 1 << 24;
+    size_t trials = 1 << 2;
 
     long t1;
     long t2;
