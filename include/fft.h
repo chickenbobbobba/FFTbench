@@ -154,12 +154,3 @@ std::vector<std::complex<double>> FFT_ip(const std::vector<std::complex<double>>
     
     return result;
 }
-
-std::vector<std::complex<double>> FFT_normal(const std::vector<std::complex<double>>& data) {
-    auto res = FFT(data);
-    auto n = std::complex((double)data.size());
-    for (auto& i : res) {
-        i = i / n;
-    }
-    return res;
-}
